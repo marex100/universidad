@@ -1,7 +1,9 @@
+/* eslint-disable arrow-body-style */
 import jwt from 'jsonwebtoken';
 import config from './config';
 
-export const generateToken = (user) => jwt.sign(
+export const generateToken = (user) => {
+  return jwt.sign(
     {
       _id: user._id,
       name: user.name,
@@ -10,6 +12,7 @@ export const generateToken = (user) => jwt.sign(
     },
     config.JWT_SECRET
   );
+};
 export const isAuth = (req, res, next) => {
   const bearerToken = req.headers.authorization;
   if (!bearerToken) {
