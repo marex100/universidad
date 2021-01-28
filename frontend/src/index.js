@@ -16,6 +16,7 @@ import DashboardScreen from './screens/DashboardScreen.js';
 import ProductListScreen from './screens/ProductListScreen.js';
 import ProductEditScreen from './screens/ProductEditScreen.js';
 import OrderListScreen from './screens/OrderListScreen.js';
+import Footer from './components/Footer.js';
 
 const routes={
     '/': HomeScreen,
@@ -49,6 +50,7 @@ const router = async () => {
   console.log(request);
 
   const screen = routes[parseUrl]? routes[parseUrl]: Error404Screen;
+
   const header = document.getElementById('header-container');
   header.innerHTML = await Header.render();
   await Header.after_render();
@@ -56,6 +58,10 @@ const router = async () => {
   const main = document.getElementById('main-container');
   main.innerHTML =await screen.render();
   if (screen.after_render) await screen.after_render();
+
+const footer = document.getElementById('footer-container');
+footer.innerHTML= await Footer.render();
+await Footer.after_render();
 
   hideLoading();
 
