@@ -80,17 +80,20 @@ button.primary {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
-  height: 100%;
+  grid-template-rows: 5rem 1fr 3fr;
+
+  height: 100vh;
 }
+
 header {
-  grid-area: header;
   background-color: #292c2f;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  display: flex;
 }
 
 header a {
@@ -114,6 +117,7 @@ footer {
   justify-content: center;
   align-items: center;
   bottom: 0;
+  padding-top: 1.5rem;
 }
 .footer-distributed {
   background-color: #292c2f;
@@ -124,7 +128,7 @@ footer {
   font: bold 16px sans-serif;
 
   padding: 55px 50px;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .footer-distributed .footer-left,

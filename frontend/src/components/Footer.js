@@ -11,16 +11,7 @@ const Footer = {
 
 				<p class="footer-links">
 					<a href="#">Home</a>
-					·
-					<a href="#">Blog</a>
-					·
-					<a href="#">Pricing</a>
-					·
-					<a href="#">About</a>
-					·
-					<a href="#">Faq</a>
-					·
-					<a href="#">Contact</a>
+					
 				</p>
 
 				<p class="footer-company-name">Mario Hidalgo &copy; 2021</p>
@@ -58,8 +49,14 @@ const Footer = {
 
 					<a href="https://www.facebook.com/llantasgrecia" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
 
-			<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+					<a href="#"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>	</a>
+
+					<a href="#"><i class="fab fa-waze"  aria-hidden="true"></i></a>
+
+
+
                     <a href="#" class="fa fa-instagram"></a>
 
 				</div>

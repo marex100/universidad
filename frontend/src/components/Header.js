@@ -5,7 +5,7 @@ const Header = {
     const { name, isAdmin } = getUserInfo();
     return ` 
   <div class="brand">
-    <a href="/#/">jsamazona</a>
+    <a href="/#/">Llantas Grecia</a>
   </div>
   <div>
   ${
@@ -14,7 +14,7 @@ const Header = {
       : `<a href="/#/signin">Sign-In</a>`
   }
     
-    <a href="/#/cart">Cart</a>
+    <a href="/#/cart">COMPRAR</a>
     ${isAdmin ? `<a href="/#/dashboard">Dashboard</a>` : ''}
 
   </div>`;
