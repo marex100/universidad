@@ -72,7 +72,10 @@ button.primary {
 .error {
   color: #c04040;
 }
-
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+}
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -91,9 +94,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0;
   display: flex;
+  position: sticky;
 }
 
 header a {
