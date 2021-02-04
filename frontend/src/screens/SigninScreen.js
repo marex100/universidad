@@ -50,8 +50,8 @@ const SigninScreen = {
           </li>
           <li>
             <div>
-              New User?
-              <a href="/#/register">Create your account </a>
+              Nuevo Usuario?
+              <a href="/#/register">Clic para crear cuenta nueva</a>
             </div>
           </li>
         </ul>

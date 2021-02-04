@@ -49,7 +49,7 @@ const Footer = {
 
 					<a href="https://www.facebook.com/llantasgrecia" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
 
-					<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+					<a href="https://api.whatsapp.com/send?phone=50685224085" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
 					<a href="#"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>	</a>
 

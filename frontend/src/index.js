@@ -17,6 +17,7 @@ import ProductListScreen from './screens/ProductListScreen.js';
 import ProductEditScreen from './screens/ProductEditScreen.js';
 import OrderListScreen from './screens/OrderListScreen.js';
 import Footer from './components/Footer.js';
+import ContactoScreen from './screens/ContactoScreen.js';
 
 const routes={
     '/': HomeScreen,
@@ -34,6 +35,7 @@ const routes={
     '/dashboard': DashboardScreen,
     '/productlist': ProductListScreen,
     '/orderlist': OrderListScreen,
+    '/contact': ContactoScreen,
 
 
 

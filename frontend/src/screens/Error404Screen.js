@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 const Error404Screen = {
     render: () => {
       return `<div>Page not found 404 </div>`;

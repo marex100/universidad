@@ -35,7 +35,7 @@ const RegisterScreen = {
             <h1>Create Account</h1>
           </li>
           <li>
-            <label for="name">Name</label>
+            <label for="name">Nombre Completo</label>
             <input type="name" name="name" id="name" />
           </li>
           <li>
@@ -47,15 +47,15 @@ const RegisterScreen = {
             <input type="password" name="password" id="password" />
           </li>
           <li>
-            <label for="repassword">Re-Enter Password</label>
+            <label for="repassword">Re-Ingrese Password</label>
             <input type="password" name="repassword" id="repassword" />
           </li>
           <li>
-            <button type="submit" class="primary">Register</button>
+            <button type="submit" class="primary">Registrarse</button>
           </li>
           <li>
             <div>
-              Already have an account?
+            Ya tienes unas cuenta creada?
               <a href="/#/signin">Sign-In </a>
             </div>
           </li>
