@@ -32,7 +32,7 @@ const RegisterScreen = {
       <form id="register-form">
         <ul class="form-items">
           <li>
-            <h1>Create Account</h1>
+            <h1>Crear una nueva cuenta</h1>
           </li>
           <li>
             <label for="name">Nombre Completo</label>

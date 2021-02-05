@@ -74,8 +74,8 @@ const CartScreen={
         <div class= "cart-list">
         <ul class= "cart-list-container">
         <li>
-        <h3>Shopping Cart</h3>
-        <div>Price</div>
+        <h3>Carrito de Compras</h3>
+        <div>Precio</div>
         </li>
         ${
             cartItems.length === 0? 
@@ -103,7 +103,7 @@ const CartScreen={
                 )}
             </select>
             <button type="button" class="delete-button" id="${item.product}">
-            Delete
+            Eliminar
             </button>
             </div>
             </div>
@@ -122,7 +122,7 @@ const CartScreen={
         $${cartItems.reduce((a,c)=> a + c.price * c.qty, 0)}
         </h3>
         <button id="checkout-button" class="primary fw">
-        Proceed to Checkout
+        Procedecer para concluir la compra
         </button>
         </div>
         </div>

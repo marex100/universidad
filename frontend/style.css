@@ -130,7 +130,7 @@ footer {
   justify-content: center;
   align-items: center;
   bottom: 0;
-  padding-top: 1.5rem;
+
   clear: both;
 }
 header a {
@@ -159,7 +159,6 @@ header a:hover {
   font: bold 16px sans-serif;
 
   padding: 55px 50px;
-  margin-top: 10px;
 }
 
 .footer-distributed .footer-left,
@@ -266,6 +265,7 @@ header a:hover {
 .iconosMario a {
   background-color: #33383b;
   color: #ffffff;
+  padding-top: 50px;
 }
 
 .footer-distributed .footer-icons {
@@ -279,14 +279,12 @@ header a:hover {
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
-
   font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
 
   margin-right: 3px;
-  margin-bottom: 5px;
 }
 
 /* Products */
