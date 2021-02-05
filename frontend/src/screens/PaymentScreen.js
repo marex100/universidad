@@ -42,9 +42,10 @@ const PaymentScreen = {
             <input type="radio"
             name="payment-method"
             id="stripe"
-            value="Stripe"
+            value="SinpeMovil"
              />
-            <label for="stripe" >Stripe</label>
+            <label for="stripe" >Sinpe Movil 8888-8888 / Efectivo en la tienda / Otro
+            </label>
            </div> 
         </li>
           <li>
