@@ -57,16 +57,10 @@ const router = async () => {
   header.innerHTML = await Header.render();
   await Header.after_render();
 
-  
-
 
   const main = document.getElementById('main-container');
   main.innerHTML =await screen.render();
   if (screen.after_render) await screen.after_render();
- 
-
-
-
 
 const footer = document.getElementById('footer-container');
 footer.innerHTML= await Footer.render();
