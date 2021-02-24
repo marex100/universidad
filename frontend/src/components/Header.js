@@ -15,8 +15,8 @@ const Header = {
   }
     
     <a href="/#/cart">COMPRAR</a>
-    <a href="/#/contact">CONTACTÉNOS</a>
-    ${isAdmin ? `<a href="/#/dashboard">Dashboard</a>` : ''}
+    <a href="/#/contact">CONTACTENOS</a>
+    ${isAdmin ? `<a href="/#/dashboard">REPORTES</a>` : ''}
 
   </div>`;
   },
