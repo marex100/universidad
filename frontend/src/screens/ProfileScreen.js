@@ -41,10 +41,10 @@ const ProfileScreen = {
       <form id="profile-form">
         <ul class="form-items">
           <li>
-            <h1>User Profile</h1>
+            <h1>Perfil Usuario</h1>
           </li>
           <li>
-            <label for="name">Name</label>
+            <label for="name">Nombre</label>
             <input type="name" name="name" id="name" value="${name}" />
           </li>
           <li>
@@ -56,10 +56,10 @@ const ProfileScreen = {
             <input type="password" name="password" id="password" />
           </li>
           <li>
-            <button type="submit" class="primary">Update</button>
+            <button type="submit" class="primary">Actualizar Datos</button>
           </li>
           <li>
-          <button type="button" id="signout-button" >Sign Out</button>
+          <button type="button" id="signout-button" >Terminar Sesión</button>
         </li>
         
         </ul>
@@ -67,22 +67,22 @@ const ProfileScreen = {
     </div>
     </div>
     <div class="profile-orders">
-    <h2>Order History</h2>
+    <h2>Historial de Ordenes</h2>
       <table>
         <thead>
           <tr>
-            <th>ORDER ID</th>
-            <th>DATE</th>
+            <th>ID Orden</th>
+            <th>Fecha</th>
             <th>TOTAL</th>
-            <th>PAID</th>
-            <th>DELIVERED</th>
-            <th>ACTIONS</th>
+            <th>Pago</th>
+            <th>Entregado</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
           ${
             orders.length === 0
-              ? `<tr><td colspan="6">No Order Found.</tr>`
+              ? `<tr><td colspan="6">No se encontró ninguna orden.</tr>`
               : orders
                   .map(
                     (order) => `
@@ -92,7 +92,7 @@ const ProfileScreen = {
           <td>${order.totalPrice}</td>
           <td>${order.paidAt || 'No'}</td>
           <td>${order.deliveryAt || 'No'}</td>
-          <td><a href="/#/order/${order._id}">DETAILS</a> </td>
+          <td><a href="/#/order/${order._id}">Detalles</a> </td>
         </tr>
         `
                   )

@@ -108,7 +108,7 @@ const CartScreen={
             </div>
             </div>
             <div class="cart-price">
-            $${item.price}
+            ₡${item.price}
             </div>
             </li>
             `).join('\n')
@@ -117,12 +117,12 @@ const CartScreen={
         </div>
         <div class="cart-action">
         <h3>
-        Subtotal( ${cartItems.reduce((a,c)=> a+c.qty,0)} items)
+        Subtotal( ${cartItems.reduce((a,c)=> a+c.qty,0)} Artículos)
         :
-        $${cartItems.reduce((a,c)=> a + c.price * c.qty, 0)}
+        ₡${cartItems.reduce((a,c)=> a + c.price * c.qty, 0)}
         </h3>
         <button id="checkout-button" class="primary fw">
-        Procedecer para concluir la compra
+        Proceder para concluir la compra
         </button>
         </div>
         </div>

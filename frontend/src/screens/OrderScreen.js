@@ -108,38 +108,38 @@ const OrderScreen = {
     }
     return `
     <div>
-    <h1>Order ${_id}</h1>
+    <h1>Orden ${_id}</h1>
       <div class="order">
         <div class="order-info">
           <div>
-            <h2>Shipping</h2>
+            <h2>Envío o entrega</h2>
             <div>
             ${shipping.address}, ${shipping.city}, ${shipping.postalCode}, 
             ${shipping.country}
             </div>
             ${
               isDelivered
-                ? `<div class="success">Delivered at ${deliveredAt}</div>`
-                : `<div class="error">Not Delivered</div>`
+                ? `<div class="success">Entregado en ${deliveredAt}</div>`
+                : `<div class="error">No Entregado</div>`
             }
              
           </div>
           <div>
-            <h2>Payment</h2>
+            <h2>Forma de Pago</h2>
             <div>
-              Payment Method : ${payment.paymentMethod}
+              Método de pago: ${payment.paymentMethod}
             </div>
             ${
               isPaid
-                ? `<div class="success">Paid at ${paidAt}</div>`
-                : `<div class="error">Not Paid</div>`
+                ? `<div class="success">Pagado en  ${paidAt}</div>`
+                : `<div class="error">No ha sigo pagado</div>`
             }
           </div>
           <div>
             <ul class="cart-list-container">
               <li>
-                <h2>Shopping Cart</h2>
-                <div>Price</div>
+                <h2>Carrito de compras</h2>
+                <div>Precio</div>
               </li>
               ${orderItems
                 .map(
@@ -152,9 +152,9 @@ const OrderScreen = {
                     <div>
                       <a href="/#/product/${item.product}">${item.name} </a>
                     </div>
-                    <div> Qty: ${item.qty} </div>
+                    <div> Cantidad: ${item.qty} </div>
                   </div>
-                  <div class="cart-price"> $${item.price}</div>
+                  <div class="cart-price"> ₡${item.price}</div>
                 </li>
                 `
                 )
@@ -165,17 +165,17 @@ const OrderScreen = {
         <div class="order-action">
            <ul>
                 <li>
-                  <h2>Order Summary</h2>
+                  <h2>Datos de la compra</h2>
                  </li>
-                 <li><div>Items</div><div>$${itemsPrice}</div></li>
-                 <li><div>Shipping</div><div>$${shippingPrice}</div></li>
-                 <li><div>Tax</div><div>$${taxPrice}</div></li>
-                 <li class="total"><div>Order Total</div><div>$${totalPrice}</div></li>                  
+                 <li><div>Artículos</div><div>₡${itemsPrice}</div></li>
+                 <li><div>Envío</div><div>₡${shippingPrice}</div></li>
+                 <li><div>Impuestos</div><div>₡${taxPrice}</div></li>
+                 <li class="total"><div>Precio total</div><div>₡${totalPrice}</div></li>                  
                  <li><div class="fw" id="paypal-button"></div></li>
                    <li>
                    ${
                     isPaid && !isDelivered && isAdmin
-                      ? `<button id="deliver-order-button" class="primary fw">Deliver Order</button>`
+                      ? `<button id="deliver-order-button" class="primary fw">Entregar Orden</button>`
                       : ''
                   }
                   </li>

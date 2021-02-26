@@ -49,7 +49,7 @@ const PaymentScreen = {
            </div> 
         </li>
           <li>
-            <button type="submit" class="primary">Continue</button>
+            <button type="submit" class="primary">Continuar</button>
           </li>        
         </ul>
       </form>

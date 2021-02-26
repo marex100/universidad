@@ -23,7 +23,7 @@ const ProductScreen = {
 
     return `<div class="content">
     <div class="back-to-result">
-      <a href="/#/">Back to result</a>
+      <a href="/#/">Regresar</a>
     </div>
     <div class="details">
     <div class="details-image">
@@ -41,10 +41,10 @@ const ProductScreen = {
         })}
         </li>
         <li>
-        Price: <strong>$${product.price}</strong>
+        Precio: <strong>₡${product.price}</strong>
         </li>
         <li>
-        Description:
+        Descripción:
         <div>
         ${product.description}
         </div>
@@ -54,18 +54,18 @@ const ProductScreen = {
     <div class="details-action">
     <ul>
     <li>
-    Price: $${product.price}
+    Precio: ₡${product.price}
     </li>
     <li>
-    Status:
+    Estado:
     ${
       product.countInStock > 0
-      ? `<span class="success">In Stock</span>`
-      : `<span class="error">Unavailable</span>`
+      ? `<span class="success">Disponible</span>`
+      : `<span class="error">No hay stock</span>`
     }
     </li>
     <li>
-    <button id="add-button" class="fw primary"> Add to Cart
+    <button id="add-button" class="fw primary"> Agregar al carrito
     </li>
     </ul>
         </div>
