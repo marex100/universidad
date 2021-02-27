@@ -198,7 +198,9 @@ main {
     margin-top: 20px;
   }
 }
-
+.treu {
+  color: #40c040;
+}
 .footer-dark .item.social > a {
   font-size: 20px;
   width: 36px;

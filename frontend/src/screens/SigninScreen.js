@@ -35,14 +35,14 @@ const SigninScreen = {
       <form id="signin-form">
         <ul class="form-items">
           <li>
-            <h1>Sign-In</h1>
+            <h1>Inicio Sesión</h1>
           </li>
           <li>
-            <label for="email">Email</label>
+            <label for="email">Correo Electrónico</label>
             <input type="email" name="email" id="email" />
           </li>
           <li>
-            <label for="password">Password</label>
+            <label for="password">Contraseña</label>
             <input type="password" name="password" id="password" />
           </li>
           <li>
@@ -51,7 +51,7 @@ const SigninScreen = {
           <li>
             <div>
               Nuevo Usuario?
-              <a href="/#/register">Clic para crear cuenta nueva</a>
+              <a href="/#/register" class="treu">Clic aquí</a>
             </div>
           </li>
         </ul>
