@@ -16,29 +16,39 @@ const HomeScreen = {
       <li data-target="#demo" data-slide-to="0" class="active"></li>
       <li data-target="#demo" data-slide-to="1"></li>
       <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
+      <li data-target="#demo" data-slide-to="3"></li>
+
+      </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../../images/2.png" alt="Los Angeles" width="1100" height="500">
         <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>We had such a great time in LA!</p>
+          <h3>Llantas Grecia los mejores precios</h3>
+          <p>Encuentranos en WAZE</p>
         </div>   
       </div>
       <div class="carousel-item">
         <img src="../../images/4.png" alt="Chicago" width="1100" height="500">
         <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
+          <h3>Grecia de Alajuela</h3>
+          <p>Servicio de alta calidad</p>
         </div>   
       </div>
       <div class="carousel-item">
         <img src="../../images/5.png" alt="New York" width="1100" height="500">
         <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
+          <h3>Tenemos las mejores marcas</h3>
+          <p>Precios de locura!</p>
         </div>   
       </div>
+      <div class="carousel-item">
+      <img src="../../images/6.png" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Estamos en todas las redes sociales</h3>
+        <p>Calidad garantizada</p>
+      </div>   
+    </div>
+
     </div>
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>

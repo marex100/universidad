@@ -7,11 +7,11 @@ const Header = {
   <div class="brand">
     <a href="/#/">Llantas Grecia</a>
   </div>
-  <div>
+  <div class="example">
   ${
     name
       ? `<a href="/#/profile">${name}</a>`
-      : `<a href="/#/signin">Sign-In</a>`
+      : `<a href="/#/signin">LOGIN</a>`
   }
     
     <a href="/#/cart">COMPRAR</a>
